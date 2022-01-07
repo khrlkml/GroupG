@@ -1,0 +1,139 @@
+<html>
+<head>
+	<meta chatset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="scripts/Donation.js"></script>
+	<style>
+		body {
+  			background-image: url('images/ocean.png');
+ 			background-repeat: no-repeat;
+ 			background-attachment: fixed;  
+  			background-size: cover;
+			color: white;
+			font-size: 1.1vw;
+			}
+		
+		nav{
+    			background: rgba(0,0,0,0.25);
+			}
+
+		nav:after{
+    			content: '';
+    			clear: both;
+    			display: table;
+			}
+
+		nav .logo {
+    			float: left;
+    			padding-left: 15px;
+			}
+
+		nav ul {
+    			float: right;
+    			list-style: none;
+    			margin-right: 40px;
+    			position: relative;
+    			margin-top: 25px;
+			}
+
+		nav ul li {
+    			float: left;
+    			display: inline-block;
+    			background: transparent;
+    			margin: 0 5px;
+			}
+
+		nav ul li a {
+    			color: white;
+    			text-decoration: none;
+    			line-height: 70px;
+    			font-size: 18px;
+    			padding: 9px 15px;
+			}
+
+		nav ul li a:hover {
+    			box-shadow: 0 0 5px #33ffff, 0 0 5px #33ffff;
+    			border-radius: 10px;
+    			color: cyan;
+			}
+
+		nav ul ul {
+    			position: absolute;
+    			top: 50px;
+    			opacity: 0;
+    			visibility: hidden;
+    			z-index: 1;
+    			background: rgba(0,0,0,0.25);
+   			}
+
+		nav ul li:hover > ul{
+    			opacity: 1;
+    			visibility: visible;
+			}
+
+		nav ul ul li {
+    			position: relative;
+    			margin: 0px;
+    			float:none;
+    			top: -10px;
+    			left: -30px;
+    			display: list-item;
+    			border-bottom: 1px solid rgba(0,0,0,0.5) ;
+			}
+
+		p.text1 {
+			text-align: center;
+			font-size:3vw;
+			}
+
+		.container {
+  			position: relative;
+			}	
+	
+		.text1 {
+  			bottom: 111px;
+  			left: 2px;
+  			font-size: 18px;
+			}
+		
+		@media screen and (max-width: 400px) {
+ 			 .a .b .ul {
+    			width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+ 			 }
+	</style>
+</head>
+<body>
+	
+	<nav>
+           	 	<div class="logo"><img src="images/inv-logo.png" alt=""></div>
+            		<ul>
+                		<li><a href="main.html">About Us</a></li>
+                		<li>
+                    		<a href="ourworkpage.html">Our Works</a>
+                    	<ul>
+                        		<li><a href="">Guideline</a></li>
+                        		<li><a href="">Video Montage</a></li>
+                        		<li><a href="">Past Visit</a></li>
+                    	</ul>
+                		</li>
+                		<li><a href="Donation.html">Donation</a></li>
+                		<li><a href="">Contact Us</a></li>
+           		 </ul>
+        </nav>
+
+	
+	<p class="text1">Our past visits</p>
+	<div class="container">	
+		<img src="images/sarawak.png" style="max-width:100%;width:460px;height:350px;" alt="sarawak water">
+		<img src="images/tanjongmanis.png" style="max-width:100%;width:540px;height:350px;" alt="tanjong manis water">
+		<img src="images/lundus.png" style="max-width:100%;width:450px;height:350px;" alt="lundus water">
+		<img src="images/visit.png" style="max-width:100%;width:460px;height:350px;" alt="visit water">
+		<img src="images/visit1.png" style="max-width:100%;width:540px;height:350px;" alt="visit1 water">
+		<img src="images/visit2.png" style="max-width:100%;width:450px;height:350px;" alt="visit2 water">
+		<img src="images/visit3.png" style="max-width:100%;width:460px;height:350px;" alt="visit3 water">
+		<img src="images/visit4.png" style="max-width:100%;width:540px;height:350px;" alt="visit4 water">
+		<img src="images/visit5.png" style="max-width:100%;width:450px;height:350px;" alt="visit5 water">
+	  
+</body>
+</html>

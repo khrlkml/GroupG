@@ -1,0 +1,149 @@
+<html>
+<head>
+	<meta chatset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="scripts/Donation.js"></script>
+	<style>
+
+		body {
+  			background-image: url('images/sea.png');
+ 			background-repeat: no-repeat;
+ 			background-attachment: fixed;  
+  			background-size: cover;
+			color: white;
+			font-size: 1.1vw;
+			}
+		nav{
+    			background: rgba(0,0,0,0.25);
+			}
+
+		nav:after{
+    			content: '';
+    			clear: both;
+    			display: table;
+			}
+
+		nav .logo {
+    			float: left;
+    			padding-left: 15px;
+			}
+
+		nav ul {
+    			float: right;
+    			list-style: none;
+    			margin-right: 40px;
+    			position: relative;
+    			margin-top: 25px;
+			}
+
+		nav ul li {
+    			float: left;
+    			display: inline-block;
+    			background: transparent;
+    			margin: 0 5px;
+			}
+
+		nav ul li a {
+    			color: white;
+    			text-decoration: none;
+    			line-height: 70px;
+    			font-size: 18px;
+    			padding: 9px 15px;
+			}
+
+		nav ul li a:hover {
+    			box-shadow: 0 0 5px #33ffff, 0 0 5px #33ffff;
+    			border-radius: 10px;
+    			color: cyan;
+			}
+
+		nav ul ul {
+    			position: absolute;
+    			top: 50px;
+    			opacity: 0;
+    			visibility: hidden;
+    			z-index: 1;
+    			background: rgba(0,0,0,0.25);
+   			}
+
+		nav ul li:hover > ul{
+    			opacity: 1;
+    			visibility: visible;
+			}
+
+		nav ul ul li {
+    			position: relative;
+    			margin: 0px;
+    			float:none;
+    			top: -10px;
+    			left: -30px;
+    			display: list-item;
+    			border-bottom: 1px solid rgba(0,0,0,0.5) ;
+			}
+
+		p.h1 {
+			text-align:center;
+			font-size: 1.8vw;
+			}
+		p.h2 {
+			text-align:center;
+			font-size: 1.8vw;
+			border: 5px solid lightblue;
+			margin-top: 90px;
+			}
+
+		p.h3 {
+			text-align:center;
+			font-size: 1.8vw;
+			border: 5px solid lightblue;
+			margin-top: 90px;
+			}
+
+		p.h4 {
+			text-align:center;
+			font-size: 1.8vw;
+			border: 5px solid lightblue;
+			margin-top: 90px;
+			}
+
+		.container {
+ 			 position: relative;
+ 			 color: white;
+		
+		@media screen and (max-width: 400px) {
+ 			 .a .b .ul {
+    			width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+ 			 }
+		
+	</style>
+</head>
+<body>
+	
+	<nav>
+           	 	<div class="logo"><img src="images/inv-logo.png" alt=""></div>
+            		<ul>
+                		<li><a href="main.html">About Us</a></li>
+                		<li>
+                    		<a href="ourworkpage.html">Our Works</a>
+                    	<ul>
+                        		<li><a href="">Guideline</a></li>
+                        		<li><a href="">Video Montage</a></li>
+                        		<li><a href="">Past Visit</a></li>
+                    	</ul>
+                		</li>
+                		<li><a href="Donation.html">Donation</a></li>
+                		<li><a href="">Contact Us</a></li>
+           		 </ul>
+        </nav>
+	
+	<div class="container">
+ 		 <img src="images/water.png" style="max-width:100%;height:500px;float: left;" alt="water">
+		<p class="h1"> Providing clean and fresh water throughout the country</p>
+		<p class="h2"> Guideline</p>
+		<p class="h3"> Donation</p>
+		<p class="h4"> Contact Us</p>	
+	</div>	 
+
+</body>
+</html>
