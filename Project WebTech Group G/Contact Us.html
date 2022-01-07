@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Us</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+* {
+  box-sizing: border-box;
+}
+h2 {
+  font-size:2vw;
+  color:white;
+}
+h1 {
+  font-size:4vw;
+  color:white;
+}
+h3 {
+  font-size:2vw;
+  color:white;
+}
+body {
+  background-image: url('bg_1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+nav{
+  background: rgb(0, 0, 0, 0.5);
+  
+}
+
+nav:after{
+  content: '';
+  clear: both;
+  display: table;
+}
+
+nav .logo {
+  float: left;
+  padding-left: 25px;
+  align-items: center;
+  margin-top: 28px;
+  
+}
+
+nav ul {
+  float: right;
+  list-style: none;
+  margin-right: 40px;
+  position: relative;
+  margin-top: 25px;
+}
+nav ul li {
+  float: left;
+  display: inline-block;
+  background: transparent;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  line-height: 70px;
+  font-size: 18px;
+  padding: 5px 15px;
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 5px #33ffff, 0 0 5px #33ffff;
+  border-radius: 10px;
+  color: cyan;
+}
+
+nav ul ul {
+  position: absolute;
+  top: 35px;
+  opacity: 0; 
+  visibility: hidden;
+  z-index: 1;
+  background: rgba(0,0,0,0.25);
+
+  
+}
+
+nav ul li:hover > ul{
+  opacity: 1;
+  visibility: visible;
+}
+
+nav ul ul li {
+  position: relative;
+  margin: 0px;
+  float:none;
+  top: -10px;
+  left: 0px;
+  display: list-item;
+  border-bottom: 1px solid rgba(0,0,0,0.5) ;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 8%;
+  font-size:1vw;
+}
+
+.button:hover {
+  background-color: #555;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.map  {
+position: relative;
+padding-bottom: 50%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+}
+.map iframe {
+position: absolute;
+width: 80%;
+height: 80%;
+}
+@media screen and (max-width: 480px) {
+  /* For mobile phones: */
+  .header, .map, .media{
+    padding: 20px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* For mobile phones: */
+  .column{
+    width: 100%;
+  }
+}
+</style>
+<body>
+
+<nav>
+    <div class="logo"><img src="cropped-logo.png" alt=""></div>
+    <ul>
+        <li><a href="main.html">About Us</a></li>
+        <li>
+            <a href="ourworks.html">Our Works</a>
+            <ul>
+                <li><a href="">Guideline</a></li>
+                <li><a href="">Video Montage</a></li>
+                <li><a href="pastvisit.html">Past Visit</a></li>
+            </ul>
+        </li>
+        <li><a href="Donation.html">Donation</a></li>
+        <li><a href="">Contact Us</a></li>
+    </ul>
+</nav>
+<br>
+<div class="header">
+      <h1 style="text-align:center;">Contact Us</h1>
+      <h3 style="text-align:center;">Any inquiries? Feel free to contact us anytime</h3>
+</div>
+<div class="row">
+	<div class="column">
+        <div class="media">
+      <img src="twitter.png" alt="TwT" style="width:5%">
+	<h2>@ConwayWater</h2>
+        <p><a href="https://twitter.com/" class="button">Visit</a></p>
+      <img src="instagram.png" alt="Instagram" style="width:5%">
+        <h2>@ConwayCompany</h2>
+        <p><a href="https://www.instagram.com/" class="button">Visit</a></p>
+      <img src="facebook.png" alt="FB" style="width:5%">
+        <h2>Conway Clean Water</h2>
+        <p><a href="https://www.facebook.com/" class="button">Visit</a></p>
+      <img src="whatsapp.png" alt="WS" style="width:5%">
+        <h2>+601110094575(Umar)	+60196439125(Khairul)</h2>
+	<h2>+60167790104(Hakimi)	+60182507940(Idham)</h2>
+      <img src="gmail.png" alt="GMail" style="width:5%">
+	<h2>ConwayCompany2020@gmail.com</h2>
+</div>
+</div>
+<div class="column">
+	<div class="map">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.3994960092477!2d101.73248081470491!3d3.2504766976335002!2m3!
+	1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc38c2f70795af%3A0xf808897bf1163a3!2sInternational%20Islamic%20University%20Malaysia!
+        5e0!3m2!1sen!2smy!4v1638931010065!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+<h2>Conway Company Office, Jalan Gombak, 53100, Selangor</h2>
+</div>
+</div>
+</body>
+</html>
