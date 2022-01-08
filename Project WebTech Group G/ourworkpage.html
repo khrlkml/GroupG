@@ -9,6 +9,7 @@
 </head>
 <body>
 
+    <!-- navigation bar part -->
     <nav>
         <div class="logo"><img src="images/inv-logo.png" alt=""></div>
         <ul>
@@ -16,8 +17,8 @@
             <li>
                 <a href="ourworkpage.html">Our Works</a>
                 <ul>
-                    <li><a href="">Guideline</a></li>
-                    <li><a href="">Video Montage</a></li>
+                    <li><a href="#guideline">Guideline</a></li>
+                    <li><a href="#video_montage">Video Montage</a></li>
                     <li><a href="">Past Visit</a></li>
                 </ul>
             </li>
@@ -27,8 +28,8 @@
     </nav>
 
 
-
-    <div class="title">
+<!-- guideline container part -->
+    <div class="title" id="guideline">
         <h1>Guideline</h1>
         <p>This explain the process of how donation works and what's we really do behind the scene</p>
     </div>
@@ -75,64 +76,111 @@
             </div>
         </div>
     
-        <script type="text/javascript">
-            var slides = document.querySelectorAll('.slide'); 
-            var btns = document.querySelectorAll('.btn'); 
-            let currentSlide = 1; 
-            //jvscript slider manual
-            var manualNav = function(manual){
-                slides.forEach((slide) => {
-                    slide.classList.remove('active');
-    
-                btns.forEach((btn) => {
-                    btn.classList.remove('active'); 
-                    });
-                }); 
-                slides[manual].classList.add('active'); 
-                btns[manual].classList.add('active'); 
-            }
-    
-            btns.forEach((btn, i) => {
-                btn.addEventListener("click", () => {
-                    manualNav(i);
-                    currentSlide = i; 
-                })
-            })
-    
-            //autoplay nav
-    
-            var repeat = function(activeClass) {
-                let active = document.getElementsByClassName('active'); 
-                let i =1; 
-    
-                var repeater = () => {
-                    setTimeout(function() {
-                        [...active].forEach((activeSlide) => {
-                            activeSlide.classList.remove('active'); 
-
-                        }); 
-                        slides[i].classList.add('active');
-                        btns[i].classList.add('active');
-                        i++; 
-    
-                        if(slides.length == i ) {
-                            i = 0; 
-                        }
-                        if(i >= slides.length){
-                            return;
-                        }
-                        repeater(); 
-                    }, 8000);  
-                }
-    
-                repeater();
-            }
-
-            repeat(); 
-        </script>
+      
         
     </div>
 
+    <!-- /Guideline image slider javascript  -->
+
+    <script type="text/javascript">
+        var slides = document.querySelectorAll('.slide'); 
+        var btns = document.querySelectorAll('.btn'); 
+        let currentSlide = 1; 
+        //jvscript slider manual
+        var manualNav = function(manual){
+            slides.forEach((slide) => {
+                slide.classList.remove('active');
+
+            btns.forEach((btn) => {
+                btn.classList.remove('active'); 
+                });
+            }); 
+            slides[manual].classList.add('active'); 
+            btns[manual].classList.add('active'); 
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                manualNav(i);
+                currentSlide = i; 
+            })
+        })
+
+        //autoplay nav
+
+        var repeat = function(activeClass) {
+            let active = document.getElementsByClassName('active'); 
+            let i =1; 
+
+            var repeater = () => {
+                setTimeout(function() {
+                    [...active].forEach((activeSlide) => {
+                        activeSlide.classList.remove('active'); 
+
+                    }); 
+                    slides[i].classList.add('active');
+                    btns[i].classList.add('active');
+                    i++; 
+
+                    if(slides.length == i ) {
+                        i = 0; 
+                    }
+                    if(i >= slides.length){
+                        return;
+                    }
+                    repeater(); 
+                }, 8000);  
+            }
+
+            repeater();
+        }
+
+        repeat(); 
+    </script>
+
+<!-- container for video montage part -->
+    <div class="container" id="video_montage">
+
+        <div class="heading">Video Montage Compilation</div>
+
+        <div class="video-container">
+
+            <div class="video">
+                <video src="videos/video1.mp4" muted></video>
+            </div>
+
+            <div class="video">
+                <video src="videos/video2.mp4" muted></video>
+            </div>
+
+            <div class="video">
+                <video src="videos/video3.mp4" muted></video>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- javascript for video montage window play -->
+
+    <script>
+
+        var video = document.querySelectorAll('video')
+
+        video.forEach(play => play.addEventListener('click', () =>{
+
+            play.classList.toggle('active'); 
+
+            if(play.paused){
+                play.play()
+            }
+            else {
+                play.pause()
+                play.currentTime = 0; 
+            }
+        }))
+    </script>
 
 
     

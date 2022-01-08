@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', serif;
+
+}
+
+body {
+    background:rgba(100,150,220,0.5);
+}
+
+    /* navigation section */
+nav{
+    background: rgb(0, 0, 0, 0.5);
+    
+}
+
+nav:after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav .logo {
+    float: left;
+    padding-left: 15px;
+    cursor: pointer;
+    
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+    margin-top: 25px;
+}
+nav ul li {
+    float: left;
+    display: inline-block;
+    background: transparent;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 9px 15px;
+}
+
+nav ul li a:hover {
+    box-shadow: 0 0 5px #33ffff, 0 0 5px #33ffff;
+    border-radius: 10px;
+    color: cyan;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 35px;
+    opacity: 0; 
+    visibility: hidden;
+    z-index: 1;
+    background: rgba(0,0,0,0.25);
+
+    
+}
+
+nav ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul ul li {
+    position: relative;
+    margin: 0px;
+    float:none;
+    top: -10px;
+    left: 0px;
+    display: list-item;
+    border-bottom: 1px solid rgba(0,0,0,0.5) ;
+}
+
+
+    /* Guideline section */
+
+.title {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background:rgba(100,150,220,0.5); */
+ 
+
+}
+
+.title h1{
+    font-size: 3rem;
+    margin: 2rem 0;
+    text-transform: capitalize;
+    color: black;
+    letter-spacing: .5rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+.title p {
+    font-size: 15px;
+    font-weight: 500px;
+}
+
+.img-container {
+    height: auto;  
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* background:rgba(100,150,220,0.5); */
+}
+
+
+.img-slider {
+    position: relative;
+    width: 800px;
+    height: 550px;
+    margin: 10px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+    border-radius: 35px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.25);
+   
+}
+ .img-slider .slide {
+     z-index: 1;
+     position: absolute;
+     width: 100%;
+     clip-path: circle(0% at 0 50%);
+
+ }
+
+ .img-slider .slide.active {
+    transition: 2s;
+    transition-property: clip-path;
+    clip-path: circle(150% at 0 50%);
+}
+
+ .img-slider .slide img {
+     z-index: 1;
+     width: 100%;
+     border-radius: 5px;
+     
+
+ }
+
+ .img-slider .slide .info{
+     position: absolute;
+     top: 0;
+     padding: 15px 30px;
+ }
+
+ .img-slider .slide .info h2{
+     color: rgb(0, 0, 0);
+     font-size: 30px;
+
+     font-weight: 300;
+     letter-spacing: 2px;
+ }
+
+ .img-slider .slide .info p{
+     color: rgb(0, 0, 0);
+     background: rgba(0, 0, 0, 0.1);
+     font-size: 15px;
+     width: 60%;
+     padding: 10px;
+     border-radius: 4px;
+ }
+
+ .img-slider .navigation {
+     z-index: 2;
+     position: absolute;
+     display: flex;
+     bottom: 30px;
+     left: 50%;
+     transform: translateX(-50%);
+ }
+
+ .img-slider .navigation .btn {
+     background: rgba(94, 16, 203, 0.5);
+     width: 12px;
+     height: 12px;
+     margin: 10px;
+     border-radius: 50%;
+     cursor: pointer;
+ }
+
+ .img-slider .navigation .btn.active {
+     background: black;
+     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+ } 
+
+
+ /* container for video montage */
+
+
+ .container .heading{
+    font-size: 3rem;
+    margin: 2rem 0;
+    text-transform: capitalize;
+    color: black;
+    letter-spacing: .2rem;
+    text-align: center;
+    
+    
+    
+}
+
+.video-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.video-container .video{
+    height: 15rem;
+    width: 25rem;
+    margin: 2rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.video-container .video video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+}
+
+.video-container .video video:hover {
+    transition: .2s linear;
+    transform: scale(1.05);
+}
+
+.video-container .video .active {
+    position: fixed;
+    top: 50% ;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: 80%;
+    box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.video-container .video .active:hover {
+    transition: none;
+    transform: translate(-50%, -50%) scale(1.0);
+}
+
+
+/* media-query responsive website */
+
+ @media screen and (max-width:400px){
+    
+    .header {
+        display: flex;
+        position: relative;
+        height: auto;
+    }
+
+    .title {
+        display: flex;
+        flex-wrap: wrap;
+        width: auto;
+        background:rgba(100,150,220,0.5);
+       
+        text-transform: uppercase;
+    }
+
+    .title h1 {
+        font-size: 30px;
+
+    }
+
+    .title p {
+        font-size: 15px;
+    }
+
+    nav ul li {
+        margin: 0;
+        padding: 0;
+    }
+
+    .img-container {
+        height: auto;  
+        width: auto;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        background:rgba(100,150,220,0.5);
+    }
+
+    .img-slider {
+        margin: 0;
+
+    }
+
+    @media screen and (max-width:770px) {
+    
+        nav {
+            flex-wrap: wrap;
+        }
+        nav ul li{
+            margin: 0;
+        
+        }
+    }
+    
+    @media screen and (max-width:330px) {
+        .logo {
+            /* display: none; */
+            margin: 0;
+            cursor: pointer;
+        }
+    
+        nav ul {
+            margin-left: 15px;
+            z-index: 1;
+            justify-content: center;
+            align-items: center;
+
+        
+             
+        }
+    
+        nav ul li:hover > ul{
+            opacity: 0;
+            visibility: hidden;
+            display: none;
+        }
+    
+    
+    }
+}
