@@ -32,7 +32,7 @@ Users can know and learn about our organisation in the about us page. Here we wi
 
 **Project Site Map**
 
-![](RackMultipart20220108-4-158ja2y_html_e047cba2bf9c4f3b.png)
+![ScreenShot](/screenshots/latest.png)
 
 **Group Contribution**
 
