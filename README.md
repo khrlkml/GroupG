@@ -65,6 +65,9 @@ Users can know and learn about our organisation in the about us page. Here we wi
 |  | - Design the pages |
 |  | - Created the pages |
 |  | - Find relevant images and contents for the pages |
+|
+
+
 **Use of Third Party Resources**
 
 | **Web**** Element **|** Name **|** Use of third party resources **|** Modification (if any)** |
