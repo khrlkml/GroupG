@@ -46,6 +46,7 @@ Users can know and learn about our organisation in the about us page. Here we wi
 - Find Creditcard.js files
 - Find relevant videos for pages
  |
+ | --- | --- |
 | Ahmad Hakimi Bin Ahmad Rasidi (2013793) | Pages: Main webpage:
 - Create and design main webpage
 - Web Element: Navigation bar, button, logo
@@ -58,12 +59,14 @@ Page:Our works/Guideline
 - Light blue main theme as background color
 - Add image slider with auto navigation using javascript
  |
+ | --- | --- |
 | Umar Talimsani Bin Mohd Nasir (2012783) |
 - Pages : Contact Us Page
 - Design the pages
 - Created the pages
 - Find relevant images and contents for the pages
  |
+ | --- | --- |
 | Syed Muhammad Idham Bin Syed Aluwi (2011497) |
 - Pages : Our Works Page, Past Visit Page
 - Design the pages
