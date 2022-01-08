@@ -331,7 +331,7 @@ nav ul ul li {
     
     @media screen and (max-width:330px) {
         .logo {
-            /* display: none; */
+            display: none;
             margin: 0;
             cursor: pointer;
         }
