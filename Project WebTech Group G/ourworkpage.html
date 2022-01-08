@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ourworkpage.css">
+    <title>Our Works</title>
+</head>
+<body>
+
+    <nav>
+        <div class="logo"><img src="images/inv-logo.png" alt=""></div>
+        <ul>
+            <li><a href="main.html">About Us</a></li>
+            <li>
+                <a href="ourworkpage.html">Our Works</a>
+                <ul>
+                    <li><a href="">Guideline</a></li>
+                    <li><a href="">Video Montage</a></li>
+                    <li><a href="">Past Visit</a></li>
+                </ul>
+            </li>
+            <li><a href="Donation.html">Donation</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+    </nav>
+
+
+
+    <div class="title">
+        <h1>Guideline</h1>
+        <p>This explain the process of how donation works and what's we really do behind the scene</p>
+    </div>
+
+    <div class="img-container">
+        <div class="img-slider">
+            <div class="slide active">
+                <img src="images/img_slider1.webp" width="600" height="500" alt="">
+                <div class="info">
+                    <h2>Donate</h2>
+                    <p>You can donate to us by going to the donation page.</p>
+                </div>
+            </div>
+    
+            <div class="slide">
+                <img src="images/img_slider2.jpg" width="600" height="500" alt="">
+                <div class="info">
+                    <h2>Supply</h2>
+                    <p>Your donations really support us to supply adequate of clean water to other people.</p>
+                </div>
+            </div>
+    
+            <div class="slide">
+                <img src="images/img_slider3.jpg" width="600" height="500" alt="">
+                <div class="info">
+                    <h2>Contribute</h2>
+                    <p>We ensure every needy people deserve to get the best quality of clean water.</p>
+                </div>
+            </div>
+    
+            <div class="slide">
+                <img src="images/img_slider4.jpg" width="600" height="500" alt="">
+                <div class="info">
+                    <h2>Receive benefit</h2>
+                    <p>More than 500K poeple will get benefit from your graciousness.</p>
+                </div>
+            </div>
+    
+            <div class="navigation">
+                <div class="btn active"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+            </div>
+        </div>
+    
+        <script type="text/javascript">
+            var slides = document.querySelectorAll('.slide'); 
+            var btns = document.querySelectorAll('.btn'); 
+            let currentSlide = 1; 
+            //jvscript slider manual
+            var manualNav = function(manual){
+                slides.forEach((slide) => {
+                    slide.classList.remove('active');
+    
+                btns.forEach((btn) => {
+                    btn.classList.remove('active'); 
+                    });
+                }); 
+                slides[manual].classList.add('active'); 
+                btns[manual].classList.add('active'); 
+            }
+    
+            btns.forEach((btn, i) => {
+                btn.addEventListener("click", () => {
+                    manualNav(i);
+                    currentSlide = i; 
+                })
+            })
+    
+            //autoplay nav
+    
+            var repeat = function(activeClass) {
+                let active = document.getElementsByClassName('active'); 
+                let i =1; 
+    
+                var repeater = () => {
+                    setTimeout(function() {
+                        [...active].forEach((activeSlide) => {
+                            activeSlide.classList.remove('active'); 
+
+                        }); 
+                        slides[i].classList.add('active');
+                        btns[i].classList.add('active');
+                        i++; 
+    
+                        if(slides.length == i ) {
+                            i = 0; 
+                        }
+                        if(i >= slides.length){
+                            return;
+                        }
+                        repeater(); 
+                    }, 8000);  
+                }
+    
+                repeater();
+            }
+
+            repeat(); 
+        </script>
+        
+    </div>
+
+
+
+    
+</body>
+</html>
