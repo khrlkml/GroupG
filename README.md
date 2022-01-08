@@ -39,44 +39,32 @@ Users can know and learn about our organisation in the about us page. Here we wi
 | **Name, Matric No** | **Contribution(s)** |
 | --- | --- |
 | Khairul Akmal bin Noormaizan (2013517) | - Pages : Donation Pages |
-| --- | --- |
 |  | - Navigation Bar |
-| --- | --- |
 |  | - Design the pages |
-| --- | --- |
 |  | - Created the pages |
-| --- | --- |
 |  | - Find Creditcard.js files |
-| --- | --- |
 |  | - Find relevant videos for pages |
  | --- | --- |
-| Ahmad Hakimi Bin Ahmad Rasidi (2013793) | Pages: Main webpage:
-- Create and design main webpage
-- Web Element: Navigation bar, button, logo
-- Add background image
-- Add transition Image using CSS
-- Make responsive websites for smartphone user
-
-Page:Our works/Guideline
-- Create and design guideline part in &#39;Our Works&#39; webpage
-- Light blue main theme as background color
-- Add image slider with auto navigation using javascript
- |
+| Ahmad Hakimi Bin Ahmad Rasidi (2013793) | Pages: Main webpage: |
+|  | - Create and design main webpage |
+|  | - Add background image |
+|  | - Web Element: Navigation bar, button, logo |
+|  | - Add transition Image using CSS |
+|  | - Make responsive websites for smartphone user |
+|  | - Page:Our works/Guideline|
+|  | - Create and design guideline part in &#39;Our Works&#39; webpage|
+|  | - Light blue main theme as background color|
+|  | - Add image slider with auto navigation using javascript|
  | --- | --- |
-| Umar Talimsani Bin Mohd Nasir (2012783) |
-- Pages : Contact Us Page
-- Design the pages
-- Created the pages
-- Find relevant images and contents for the pages
- |
+| Umar Talimsani Bin Mohd Nasir (2012783) |- Pages : Contact Us Page|
+|  | - Design the pages |
+|  | - Created the pages |
+|  | -  Find relevant images and contents for the pages |
  | --- | --- |
-| Syed Muhammad Idham Bin Syed Aluwi (2011497) |
-- Pages : Our Works Page, Past Visit Page
-- Design the pages
-- Created the pages
-- Find relevant images and contents for the pages
- |
-
+| Syed Muhammad Idham Bin Syed Aluwi (2011497) |- Pages : Our Works Page, Past Visit Page|
+|  | - Design the pages |
+|  | - Created the pages |
+|  | - Find relevant images and contents for the pages |
 **Use of Third Party Resources**
 
 | **Web**** Element **|** Name **|** Use of third party resources **|** Modification (if any)** |
