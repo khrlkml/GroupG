@@ -75,7 +75,9 @@ Users can know and learn about our organisation in the about us page. Here we wi
 | Background image | bg\_1.jpg | Taken from Google Image | - |
 | Conway Logo | images/inv\_logo.png | FreeLogoDesign Website
  | Resize image and invert colour |
-| About us image 1 About us image 2About us image 3Image slider 1Image slider 2Image slider 3Image slider 4 | images/jpg360/img1.jpgimages/jpg360/img2jpg.jpgimages/jpg360/img3jpg.jpgimages/img\_slider1images/img\_slider2images/img\_slider3images/img\_slider4 | Taken from Google Image | Resize image using Windows Photo |
+| About us image 1 About us image 2 About us image 3 Image slider 1 Image slider 2 Image slider 3 Image slider 4 Past visit image 1 Past visit image 2 Past visit image 3 Past visit image 4 Past visit image 5 Past visit image 6 Past visit image 7 Past visit image 8 Past visit image 9 Past visit image 10 Our works image 1
+| images/jpg360/img1.jpgimages/jpg360/img2jpg.jpgimages/jpg360/img3jpg.jpgimages/img\_slider1images/img\_slider2images/img\_slider3images/img\_slider4 images/lundus.png images/sarawak.png images/tanjongmanis.png images/visit.png images/visit1.png images/visit2.png images/visit3.png images/visit4.png images/visit5.png images/water.png
+| Taken from Google Image | Resize image using Windows Photo |
 | team&#39;s Avatar | images/avatar/avatar\_1.pngimages/avatar/avatar\_2.pngimages/avatar/avatar\_3.pngimages/avatar/avatar\_4.png | stock vector avatar website | Cropped avatar icon |
 | video | Video 1.mp4Video 2.mp4Video 3.mp4 | Taken from youtube | Modified from youtube version |
 | Script credit card | creditcard.js | Take from https://www.braemoor.co.uk/software/\_private/creditcard.js | - |
