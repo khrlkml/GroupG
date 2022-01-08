@@ -83,7 +83,7 @@ nav ul ul li {
     margin: 0px;
     float:none;
     top: -10px;
-    left: -30px;
+/*     left: -30px; */
     display: list-item;
     border-bottom: 1px solid rgba(0,0,0,0.5) ;
 }
@@ -336,7 +336,7 @@ section p{
 
 @media screen and (max-width:330px) {
     .logo {
-        /* display: none; */
+        display: none;
         cursor: pointer;
 
     }
