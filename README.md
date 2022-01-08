@@ -38,14 +38,17 @@ Users can know and learn about our organisation in the about us page. Here we wi
 
 | **Name, Matric No** | **Contribution(s)** |
 | --- | --- |
-| Khairul Akmal bin Noormaizan (2013517) |
-- Pages : Donation Pages
-- Navigation Bar
-- Design the pages
-- Created the pages
-- Find Creditcard.js files
-- Find relevant videos for pages
- |
+| Khairul Akmal bin Noormaizan (2013517) | - Pages : Donation Pages |
+| --- | --- |
+|  | - Navigation Bar |
+| --- | --- |
+|  | - Design the pages |
+| --- | --- |
+|  | - Created the pages |
+| --- | --- |
+|  | - Find Creditcard.js files |
+| --- | --- |
+|  | - Find relevant videos for pages |
  | --- | --- |
 | Ahmad Hakimi Bin Ahmad Rasidi (2013793) | Pages: Main webpage:
 - Create and design main webpage
